@@ -1,0 +1,22 @@
+{
+  "name": "accessibility_audit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./axe ./lighthouse ./pa11y",
+    "test": "npm-run-all -c test-*",
+    "test-axe": "./axe.sh",
+    "test-lighthouse": "./lighthouse.sh",
+    "test-pa11y": "./pa11y.sh"
+  },
+  "author": "Peter Hunt",
+  "license": "ISC",
+  "devDependencies": {
+    "axe-cli": "^3.0.0",
+    "lighthouse-ci": "^1.9.0",
+    "npm-run-all": "^4.1.5",
+    "pa11y": "^5.1.0",
+    "pa11y-reporter-html": "^1.0.0"
+  }
+}

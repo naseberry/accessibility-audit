@@ -1,0 +1,9 @@
+{
+  "actions": [
+    "set field #user_email to username",
+    "set field #user_password to password",
+    "click element [type=submit]",
+    "wait for url to not be http://localhost/sign_in"
+  ],
+  "timeout": 60000
+}
